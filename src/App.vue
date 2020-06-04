@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <Navbar />
-    <Three />
+    <ParticleBackground />
   </div>
 </template>
 
 <script>
   import Navbar from './components/Navbar.vue';
-  import Three from './components/Three.vue';
+  import ParticleBackground from './components/ParticleBackground.vue';
 
   export default {
     name: 'App',
     components: {
       Navbar,
-      Three
+      ParticleBackground
     }
   }
 </script>
