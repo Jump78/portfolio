@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Navbar/>
+    <Navbar />
+    <Three />
   </div>
 </template>
 
 <script>
-  import Navbar from './components/Navbar.vue'
+  import Navbar from './components/Navbar.vue';
+  import Three from './components/Three.vue';
 
   export default {
     name: 'App',
     components: {
-      Navbar
+      Navbar,
+      Three
     }
   }
 </script>
@@ -19,5 +22,9 @@
   body {
     background-color: #000;
     overflow: hidden;
+  }
+
+  #app {
+    position: relative;
   }
 </style>
