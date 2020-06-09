@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <LeftAside />
+    <div class='layout'>
+      <LeftAside />
+      <router-view/>
+    </div>
     <ParticleBackground />
   </div>
 </template>
@@ -26,5 +29,10 @@
 
   #app {
     position: relative;
+  }
+
+  .layout {
+    display: flex;
+    justify-content: space-between;
   }
 </style>

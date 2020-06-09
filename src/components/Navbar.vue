@@ -1,18 +1,10 @@
 <template>
     <nav>
       <ul>
-        <li>
-          <p>Accueil</p>
-        </li>
-        <li>
-          <p>Details</p>
-        </li>
-        <li>
-          <p>Projets</p>
-        </li>
-        <li>
-          <p>Contact</p>
-        </li>
+        <router-link to='/' tag='li'><p>Accueil</p></router-link>
+        <router-link to='detail' tag='li'><p>Details</p></router-link>
+        <router-link to='project' tag='li'><p>Projets</p></router-link>
+        <router-link to='contact' tag='li'><p>Contact</p></router-link>
       </ul>
     </nav>
 </template>
