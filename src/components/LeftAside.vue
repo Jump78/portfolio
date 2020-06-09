@@ -48,7 +48,7 @@
 
   .navbar {
     align-self: flex-end;
-    padding-right: 2.5rem;
-    margin-top: 4rem;
+    padding-right: 4rem;
+    margin-top: 6.4rem;
   }
 </style>

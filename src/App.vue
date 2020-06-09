@@ -48,6 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10rem;
+    margin-left: 16rem;
   }
 </style>

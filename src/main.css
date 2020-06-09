@@ -1,4 +1,8 @@
 body {
     font-family: 'Mosk', sans-serif;
-    color: white;
+    color: #b3b3b3;
+}
+
+p {
+    font-size: 1.6rem;
 }

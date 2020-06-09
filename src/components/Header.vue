@@ -15,20 +15,20 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   header {
-    line-height: 2em;
-    padding: 2rem 0 0 2rem;
+    line-height: 3.2rem;
+    padding: 3.2rem 0 0 3.2rem;
     height: 139px;
     width: 100%;
   }
 
   header .job {
     font-weight: 300;
-    font-size: 1.9em;
+    font-size: 3rem;
     color: rgba(255,255,255,0.6);
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3.2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #F54F29;

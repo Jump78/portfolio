@@ -17,19 +17,19 @@
 
 <style scoped>
 .entete {
-    line-height: 2em;
+    line-height: 3.2rem;
     margin-bottom: 5%;
 }
 
 h1, h2 {
-    font-size: 2em;
+    font-size: 3.2rem;
     text-transform: uppercase;
     color: #F54F29;
 }
 
 .entete .soustitre {
     font-weight: 300;
-    font-size: 1.9em;
+    font-size: 3rem;
     text-transform: lowercase;
     color: rgba(255,255,255,0.6);
 }
@@ -39,6 +39,6 @@ h1, h2 {
 }
 
 .p {
-  line-height: 1.3;
+  line-height: 2.4rem;
 }
 </style>
