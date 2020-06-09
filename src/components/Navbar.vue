@@ -1,6 +1,4 @@
 <template>
-  <div class="navbar-container">
-    <hr>
     <nav>
       <ul>
         <li>
@@ -17,7 +15,6 @@
         </li>
       </ul>
     </nav>
-  </div>
 </template>
 
 <script>
@@ -28,31 +25,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .navbar-container {
-    position: relative;
-    display: flex;
-    width: 25%;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  hr {
-    transform: rotate(20deg);
-    border-right: 1px solid #ffffff;
-    position: absolute;
-    top: -25%;
-    right: 0;
-    height: 150%;
-    margin: 0;
-    padding: 0;
-    z-index: -1;
-  }
-
-  nav {
-    padding-right: 2.5rem;
-  }
-
   li {
     display: block;
     width: auto;

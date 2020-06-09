@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <Navbar />
+    <LeftAside />
     <ParticleBackground />
   </div>
 </template>
 
 <script>
-  import Navbar from './components/Navbar.vue';
+  import LeftAside from './components/LeftAside.vue';
   import ParticleBackground from './components/ParticleBackground.vue';
 
   export default {
     name: 'App',
     components: {
-      Navbar,
+      LeftAside,
       ParticleBackground
     }
   }
