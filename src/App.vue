@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <div class='layout'>
-      <LeftAside />
-      <router-view/>
+      <div class="aside">
+        <LeftAside />
+      </div>
+      <main>
+        <router-view/>
+      </main>
     </div>
     <ParticleBackground />
   </div>
@@ -33,6 +37,17 @@
 
   .layout {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .aside {
+    width: 33vw;
+  }
+
+  main {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
   }
 </style>
