@@ -72,7 +72,7 @@ export default class {
         this.isInit = true;
     }
 
-    onMouseMove = () => {
+    onMouseMove = (event) => {
         if (!this.isInit) {
             return;
         }
