@@ -3,6 +3,32 @@ body {
     color: #b3b3b3;
 }
 
+h1, h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: #F54F29;
+}
+
 p {
     font-size: 1.6rem;
+}
+
+a {
+    display: inline-block;
+}
+
+.header-section {
+    line-height: 3.2rem;
+    margin-bottom: 5%;
+}
+
+.header-section .subtitle {
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: lowercase;
+    color: rgba(255,255,255,0.6);
+}
+
+.bold {
+    font-weight: 800;
 }
