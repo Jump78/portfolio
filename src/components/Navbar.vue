@@ -25,6 +25,7 @@
     padding: 0.8rem 1.2rem;
     margin-top: 0.8rem;
     transition: all 0.3s ease-in;
+    cursor: pointer;
   }
 
   li:hover, .active {
