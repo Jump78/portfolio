@@ -15,6 +15,11 @@ p {
 
 a {
     display: inline-block;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 .header-section {
@@ -31,4 +36,21 @@ a {
 
 .bold {
     font-weight: 800;
+}
+
+.button {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+.button:hover {
+    background-color: #fff;
+    color: black;
 }

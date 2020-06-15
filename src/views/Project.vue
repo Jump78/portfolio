@@ -160,23 +160,6 @@ export default {
       background-color: #31aada;
   }
 
-  .button {
-      font-size: 1.3rem;
-      text-align: center;
-      color: white;
-      font-weight: 700;
-      padding: 1rem 2rem;
-      text-transform: capitalize;
-      text-decoration: none;
-      border: 1px solid white;
-      cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: #fff;
-    color: black;
-  }
-
   .colleague-name {
     text-decoration: none;
     color: #f6f6f6;
