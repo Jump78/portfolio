@@ -14,7 +14,7 @@
         <p class="resume">Developpé pendant la Double Game Week de l'Ecole Multimedia en groupe de 4</p>
         <div class="slide-footer">
           <p class="tags-container"><span class="tags couleur-js">JavaScript </span><span class="tags couleur-default">Phaser </span><span class="tags couleur-html">HTML5 </span><span class="tags couleur-css">CSS3 </span></p>
-          <a href="asset/projets/momo_le_noyau/index.html" class="button">voir</a>
+          <a :href="momoProject" class="button">voir</a>
         </div>
       </div>
     </Slide>
@@ -25,7 +25,7 @@
         <p class="resume">Prototype d'un system de combat en tour par tour developpé en tant que projet de fin d'année de classe préparatoire</p>
         <div class="slide-footer">
           <p class="tags-container"><span class="tags couleur-js">JavaScript </span><span class="tags couleur-default">Phaser </span></p>
-          <a href="asset/projets/alzer/index.html" class="button">voir</a>
+          <a :href="alzerProject" class="button">voir</a>
         </div>
       </div>
     </Slide>
@@ -36,7 +36,7 @@
         <p class="resume">Il s'agit d'un projet commun a toute la classe de 1er année, soit 12 personnnes, ou le but était de developper un browser game en 2 semaines. J'ai principalement travailler sur le developpement des modules, du vaisseau spacial et sur la creation et la mise en place de la base de donnée</p>
         <div class="slide-footer">
           <p class="tags-container"><span class="tags couleur-js">JavaScript </span><span class="tags couleur-default">PHP </span><span class="tags couleur-html">HTML5 </span><span class="tags couleur-default">MySQL </span></p>
-          <a href="http://hcr.alwaysdata.net/index.php/login" class="button">voir</a>
+          <a :href="hcrProject" class="button">voir</a>
         </div>
       </div>
     </Slide>
@@ -47,7 +47,7 @@
         <p class="resume">1 semaine de developpement, un binome, un LeapMotion et une idée. Quoi de mieux pour créer LeapZik ?<br>Merci à <span class="colleague-name">Victor MOUTTON</span> d'avoir mené ce projet avec moi</p>
         <div class="slide-footer">
           <p class="tags-container"><span class="tags couleur-js">JavaScript </span><span class="tags couleur-default">LeapMotion </span><span class="tags couleur-html">HTML5 </span><span class="tags couleur-css">CSS3 </span></p>
-          <a href="" class="button">voir</a>
+          <a :href="leapZikProject" class="button">voir</a>
         </div>
       </div>
     </Slide>
@@ -58,7 +58,7 @@
         <p class="resume">Developpé en 1 semaine avec <span class="colleague-name">Clément DUSSOL</span> pour apprendre a utiliser Three.js. Le but de la semaine était de developpé un shoot'em up</p>
         <div class="slide-footer">
           <p class="tags-container"><span class="tags couleur-js">JavaScript </span><span class="tags couleur-default">Three.js </span></p>
-          <a href="asset/projets/Mr-AntiUniverse/index.html" class="button">voir</a>
+          <a :href="mrAntiniverseProject" class="button">voir</a>
         </div>
       </div>
     </Slide>
@@ -81,10 +81,15 @@ export default {
   data() {
     return {
       momoImg: 'url(' + momoImg + ')',
+      momoProject: process.env.BASE_URL + 'projets/momo_le_noyau/index.html',
       alzerImg: 'url(' + alzerImg + ')',
+      alzerProject: process.env.BASE_URL + 'projets/alzer/index.html',
       hcrImg: 'url(' + hcrImg + ')',
+      hcrProject: 'http://hcr.alwaysdata.net/index.php/login',
       leapzikImg: 'url(' + leapzikImg + ')',
+      leapZikProject: process.env.BASE_URL + 'projets/leapzik.mp4', 
       mrAntiniverseImg: 'url(' + mrAntiniverseImg + ')',
+      mrAntiniverseProject: process.env.BASE_URL + 'projets/Mr-AntiUniverse/index.html',
     }
   }
 };
