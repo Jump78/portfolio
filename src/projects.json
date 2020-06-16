@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Momo le noyau",
+        "resume": "Developpé pendant la Double Game Week de l'Ecole Multimedia en groupe de quatres personnes",
+        "tags": ["JavaScript", "Phaser", "HTML5", "CSS3"],
+        "picture": "assets/momo_le_noyau.png",
+        "link": "projets/momo_le_noyau/index.html"
+    },
+    {
+        "name": "Alzer Chronicle",
+        "resume": "Prototype d'un système de combat en tour par tour developpé en tant que projet de fin d'année de classe préparatoire",
+        "tags": ["JavaScript", "Phaser"],
+        "picture": "assets/alzer.png",
+        "link": "projets/alzer/index.html"
+    },
+    {
+        "name": "Hyper Cosmic Racer",
+        "resume": "Il s'agit d'un projet commun à toute la classe de 1er année, soit douze personnnes, où le but était de developper un browser game en deux semaines. J'ai principalement travaillé sur le développement des modules, du vaisseau spacial et sur la création et la mise en place de la base de donnée",
+        "tags": ["JavaScript", "PhP", "HTML5", "MySQL"],
+        "picture": "assets/hcr.png",
+        "link": "http://hcr.alwaysdata.net/index.php/login"
+    },
+    {
+        "name": "LeapZik",
+        "resume": "1 semaine de développement, un binome, un LeapMotion et une idée. Quoi de mieux pour créer LeapZik ?<br />Merci à <span class='colleague-name'>Victor MOUTTON</span> d'avoir mené ce projet avec moi",
+        "tags": ["JavaScript", "LeapMotion", "HTML5", "CSS3"],
+        "picture": "assets/leapzik.png",
+        "link": "projets/leapzik.mp4"
+    },
+    {
+        "name": "Mr AntiUniverse",
+        "resume": "Developpé en une semaine avec <span class='colleague-name'>Clément DUSSOL</span> pour apprendre à utiliser Three.js. Le but de la semaine était de developper un shoot'em up",
+        "tags": ["JavaScript", "Three.js"],
+        "picture": "assets/mr-antiniverse.png",
+        "link": "projets/Mr-AntiUniverse/index.html"
+    },
+    {
+        "name": "Groovy Battle",
+        "resume": "En tant que projet de fin d'études de la dernière année du cursus Développeur Multimédia, j'ai décidé de developper un jeu mêlant jeu de combat et jeu de rythme",
+        "tags": ["JavaScript", "Node.js", "Socket.io", "Express"],
+        "picture": "assets/groovy_battle.png",
+        "link": "https://groovy-battle.herokuapp.com"
+    }
+]
