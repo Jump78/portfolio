@@ -103,7 +103,12 @@ export default class extends Mesh{
 
     multiplyVelocityByScalar(value) {
         this.velocity.multiplyScalar(value);
+
         return this.getVelocity();
+    }
+
+    onHit() {
+        this.multiplyVelocityByScalar(-20);
     }
 
     render() {

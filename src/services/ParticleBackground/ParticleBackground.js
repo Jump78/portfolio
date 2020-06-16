@@ -27,7 +27,7 @@ export default class {
         this.near = near || 1;
         this.far = far || 1000;
         this.domElement = domElement;
-        this.mouse = new Vector2();
+        this.mouse = new Vector2(-20, -20);
         this.raycaster = new Raycaster();
         this.lastParticleHitUuid = null;
         this.particleCount = particleCount;
@@ -134,11 +134,19 @@ export default class {
         // calculate objects intersecting the picking ray
         let intersects = this.raycaster.intersectObjects(objectFromScene);
         if ( intersects.length > 0 ) {
-            if ( this.lastParticleHitUuid != intersects[0].object.uuid ) {
-                this.lastParticleHitUuid = intersects[0].object.uuid;
-                intersects[0].object.multiplyVelocityByScalar(-20);
-            }
-        } else if ( this.lastParticleHitUuid !== null ) {
+            intersects.forEach(({ object }) => {
+                if ( this.lastParticleHitUuid != object.uuid ) {
+                    this.lastParticleHitUuid = object.uuid;
+
+                    if(typeof object.onHit !== 'function') {
+                        return;
+                    }
+                    
+                    object.onHit();
+                }
+            });
+
+        } else {
             this.lastParticleHitUuid = null;
         }
 
@@ -155,7 +163,7 @@ export default class {
 
     start = () => {
         if(!this.isInit) {
-            throw 'You call init() method before try to start the background';
+            throw 'You must call init() method before try to start the background';
         }
 
         requestAnimationFrame(this.start);
