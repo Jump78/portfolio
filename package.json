@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "heroku-postbuild": "ls -lah && vue-cli-service build && ./postdeploy-script"
+    "heroku-postbuild": "vue-cli-service build && ls -lah && ./postdeploy-script"
   },
   "dependencies": {
     "core-js": "^3.6.5",
