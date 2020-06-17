@@ -3,5 +3,8 @@
     "clean_urls": true,
     "routes": {
       "/**": "index.html"
+    },
+    "redirects": {
+      "url": "http://clement-teboul.fr"
     }
 }
