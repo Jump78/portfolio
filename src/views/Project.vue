@@ -33,6 +33,8 @@
     'css3': 'css'
   }
 
+  const reverseProject = projectsData.reverse();
+
   export default {
     components: {
       Carousel,
@@ -42,7 +44,7 @@
     computed: {
       getProjects() {
 
-        return projectsData.reverse().map( project => {
+        return reverseProject.map( project => {
           const link = (project.link.startsWith('http') ? project.link : process.env.BASE_URL + project.link);
           const picture = 'url(' + require('@/' + project.picture) + ')';
           return {
