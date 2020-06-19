@@ -2,7 +2,7 @@
     "root": "dist",
     "clean_urls": true,
     "routes": {
-      "/robots.txt": "robots.txt",
+      "**/robots**": "robots.txt",
       "/**": "index.html"
     }
   }
